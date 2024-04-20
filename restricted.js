@@ -99,20 +99,20 @@ bot.hears("TRX",async ctx => {
           ctx.reply("Wrong Coin Generated, Please Try Again")
           return;
         }
-        if (amount < 181 || amount > 10000){
+        if (amount < 181 || amount > 910){
           ctx.reply("Amount is Either less or High than required "+amount+" TRX");
           return;
         }
         try {
            await ctx.telegram.sendMessage(admin,`
-   🎉 NEW WITHDRAWAL SENT 🎉 
+   🎉 𝐍𝐄𝐖 𝐖𝐈𝐓𝐇𝐃𝐑𝐀𝐖𝐀𝐋 𝐒𝐄𝐍𝐓 🎉 
 
-👤 User: ${name}
-🆔 User_Id: ${user_id}
-🈷️ Amount: ${amount} ${currency}
-🔍 TXID: <a href="https://tronscan.org/#/transaction/${txid}">${txid}</a>
+👤 𝐔𝐬𝐞𝐫: ${name}
+🆔 𝐔𝐬𝐞𝐫 𝐈𝐃: ${user_id}
+🈷️ 𝐀𝐦𝐨𝐮𝐧𝐭: ${amount} ${currency}
+🔍 𝐓𝐗𝐈𝐃: <a href="https://tronscan.org/#/transaction/${txid}">${txid}</a>
            
-🤖 Bot: @SaveRestrictedPosts_Bot
+🤖 𝐁𝐨𝐭: @SaveRestrictedPosts_Bot
            `,{
                  parse_mode: "HTML",
                  disable_web_page_preview: true
@@ -149,20 +149,20 @@ bot.hears("USDT",async ctx => {
       ctx.reply("Wrong Coin Generated, Please Try Again");
       return;
     }
-    if (amount < 20 || amount > 2000){
+    if (amount < 20 || amount > 100){
       ctx.reply("Amount is Either less or High than required "+amount+" USDT");
       return;
     }
     try {
        await ctx.telegram.sendMessage(admin,`
-🎉 NEW WITHDRAWAL SENT 🎉 
+🎉 𝐍𝐄𝐖 𝐖𝐈𝐓𝐇𝐃𝐑𝐀𝐖𝐀𝐋 𝐒𝐄𝐍𝐓 🎉 
 
-👤 User: ${name}
-🆔 User_Id: ${user_id}
-🈷️ Amount: ${amount} ${currency}
-🔍 TXID: <a href="https://tronscan.org/#/transaction/${txid}">${txid}</a>
+👤 𝐔𝐬𝐞𝐫: ${name}
+🆔 𝐔𝐬𝐞𝐫 𝐈𝐃: ${user_id}
+🈷️ 𝐀𝐦𝐨𝐮𝐧𝐭: ${amount} ${currency}
+🔍 𝐓𝐗𝐈𝐃: <a href="https://tronscan.org/#/transaction/${txid}">${txid}</a>
            
-🤖 Bot: @SaveRestrictedPosts_Bot
+🤖 𝐁𝐨𝐭: @SaveRestrictedPosts_Bot
            `,{
                  parse_mode: "HTML",
                  disable_web_page_preview: true
